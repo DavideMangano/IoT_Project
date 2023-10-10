@@ -25,14 +25,12 @@ The operation of the smart bracelet system consists of three main phases:
 - If the kinematic status is FALLING, the parent's bracelet sends a FALL alarm, reporting the child's position (X; Y).
 - If the parent's bracelet does not receive any message for one minute, it sends a MISSING alarm, reporting the last received position.
 
-## Requirements
+## Constraints
 
-1. Implement the prototype with your choice of operating system (including application logic, message formats, etc.). The X; Y coordinates can be random numbers, and the kinematic status should be randomly selected according to the following probability distribution:
+1. The prototype has been implemented with my choice of operating system (including application logic, message formats, etc.). The X; Y coordinates are random numbers, and the kinematic status is randomly selected according to the following probability distribution:
    - P(STANDING) = P(WALKING) = P(RUNNING) = 0.3
    - P(FALLING) = 0.1
 
-2. Simulate your implementation with two couples of bracelets simultaneously. Ensure that your code follows the design requirements. For simulation, you can emulate a node going out of range by turning it off (e.g., using `mote.turnOff()` in Python for TOSSIM). In Cooja, you can move a node out of the communication range of the other one.
+2. The implementation has been simulated with two couples of bracelets simultaneously. The code has been ensured to follow the design requirements. For simulation, a node going out of range has been simulated by turning it off (e.g., using `mote.turnOff()` in Python for TOSSIM).
 
-3. Attach your simulation to Tossim-live or Node-Red. Alarm messages should be transmitted on the serial port, and their output should be readable on the terminal or the Node-Red dashboard.
-
-Please note that this markdown representation is missing any specific code examples or technical details and serves as a high-level summary of the project's requirements and objectives.
+3. The simulation was attached to Tossim-live. Alarm messages are transmitted on the serial port, and their output is readable on the terminal.

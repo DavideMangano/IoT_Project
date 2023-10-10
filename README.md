@@ -1,4 +1,4 @@
-# Project 1: Smart Bracelets
+# Smart Bracelets
 
 In this project, you are tasked with designing, implementing, and testing a software prototype for a smart bracelet system. These bracelets are worn by both a child and their parent to keep track of the child's position and trigger alerts when the child goes too far. Similar commercially available prototypes are already on the market.
 

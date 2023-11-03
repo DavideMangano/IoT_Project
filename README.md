@@ -34,3 +34,5 @@ The operation of the smart bracelet system consists of three main phases:
 2. The implementation has been simulated with two couples of bracelets simultaneously. The code has been ensured to follow the design requirements. For simulation, a node going out of range has been simulated by turning it off (e.g., using `mote.turnOff()` in Python for TOSSIM).
 
 3. The simulation was attached to Tossim-live. Alarm messages are transmitted on the serial port, and their output is readable on the terminal.
+
+# For more information, see the [report](https://github.com/DavideMangano/SmartBracelet_IoTProject/blob/main/REPORT_SmartBracelet.pdf).
